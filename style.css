@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+		* {
+		margin: 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		}
+
+	body {background: hsl(212, 45%, 89%); font-family: 'Karla', sans-serif; font-size:16px;}
+	
+	.main {display: flex;justify-content: center;align-items: center;height: 90vh;}
+	.container {display: flex;justify-content: center;width: 635px;flex-direction: column;background: white;border-radius: 5px;box-shadow: 0px 0px 5px 1px #0003;}
+	.topdiv {padding: 2rem 2rem 1rem 2rem; color:#999;}
+	.topdiv div {margin-bottom:1rem;}
+	.bottomdiv {display: flex;}
+	.leftdiv {padding: 2rem;width:50%; background:#2BB3B1; color:#FFF;}
+	.rightdiv {padding: 2rem;width:50%; background:#4ABEBD; color:#FFF;}
+	.TopTxt1 h2 {margin-top:0px; color:#4ABEBD;}
+	.TopTxt2 h3 {color:#c0df34;}
+	.leftTxt2 {font-size: 2rem;}
+	.leftTxt3 {margin: 1rem 0rem;}
+	.leftTxt1 h3 {margin-top:0px;}
+	.rightTxt1 h3 {margin-top:0px;}
+	.btnMain {display:block; width:100%; text-align:center; background:#c0df34; border-radius:5px; padding:1rem 0rem; color:white; text-decoration:none;}
+	.rightdiv {color:#ffffffb3; font-size:.95rem;}
+	.rightTxt1 {color:#FFF; font-size:1rem;}
+	.rightdiv div {padding-bottom:.1rem;}
+	
+	@media only screen and (max-width: 560px) {
+	  /* For mobile phones: */
+		.bottomdiv {flex-direction: column;}
+		.leftdiv, .rightdiv {width: auto;}
+		.main {display: flex;justify-content: center;align-items: unset;height: unset;}
+	}
